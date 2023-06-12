@@ -1,0 +1,64 @@
+using System;
+
+namespace Course
+{
+    class Program
+    {
+        // Função de soma de 2 inteiros
+        static int Soma(int a, int b)
+        {
+            int Resultado;
+            // Cálculo matemático do resultado
+            Resultado = a + b;
+            return Resultado;
+        }
+
+        // Função de subtração de 2 inteiros
+        static int Subtracao(int a, int b)
+        {
+            // Declaração de variável de resultado
+            int Resultado;
+            // Cálculo matemático do resultado
+            Resultado = a - b;
+            return Resultado;
+        }
+
+        // Função de multiplicação de 2 inteiros
+        static int Multiplicacao(int a, int b)
+        {
+            // Declaração de variável de resultado
+            int Resultado;
+            // Cálculo matemático do resultado
+            Resultado = a * b;
+            return Resultado;
+        }
+
+        // Função de divisão de 2 inteiros
+        static int Divisao(int a, int b)
+        {
+            // Declaração de variável de resultado
+            int Resultado;
+            // Cálculo matemático do resultado
+            Resultado = a / b;
+            return Resultado;
+        }
+
+        static void Main()
+        {
+            // Declaração de variáveis
+            int c, d;
+
+            // Saída solicitando a entrada do usuário
+            Console.Write("ENTRE COM OS 2 VALORES: ");
+            // Entrada do usuário
+            c = int.Parse(Console.ReadLine());
+            d = int.Parse(Console.ReadLine());
+
+            // Saída mostrando os resultados
+            Console.WriteLine("O resultado da soma é: " + Soma(c, d));
+            Console.WriteLine("O resultado da subtração é: " + Subtracao(c, d));
+            Console.WriteLine("O resultado da multiplicação é: " + Multiplicacao(c, d));
+            Console.WriteLine("O resultado da divisão é: " + Divisao(c, d));
+        }
+    }
+}
